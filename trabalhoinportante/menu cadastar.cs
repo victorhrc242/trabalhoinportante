@@ -13,7 +13,7 @@ namespace TrabalhoFinal
 {
     public class cadastrar
     {
-        
+        cadastrarcliente C = new cadastrarcliente();        
         public void escolherAcao()
         {
             Console.WriteLine("-------------CADASTRAR---------------\n" +
@@ -25,7 +25,7 @@ namespace TrabalhoFinal
             switch (acao)
             {
                 case 1:
-                  
+                    C.cadastrarclientes();
                     break;
                 case 2:
                   

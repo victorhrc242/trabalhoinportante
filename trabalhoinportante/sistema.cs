@@ -12,8 +12,8 @@ namespace TrabalhoFinal
     public class primeiro_Menu
     {
         // primeira parte do menu
-      cadastrar c=new cadastrar();
-        cadastrarcliente c = new cadastrarcliente();
+  
+      
 
         public int chamarprimeiromenu()
         {
@@ -57,11 +57,12 @@ namespace TrabalhoFinal
 
         public int realizaracaoselecionada(int acaoselecionada)
         {
+          cadastrar c=new cadastrar();
             switch (acaoselecionada)
             {
                 case 1:
-
                     c.escolherAcao();
+                  
 
                     break;
                 case 2:
@@ -73,20 +74,7 @@ namespace TrabalhoFinal
 
             return acaoselecionada;
         }
-        public void cadstrodecliente()
-        {
-            Console.WriteLine("qual o seu nome");
-            c. = Console.ReadLine();
-            Console.WriteLine("digite sua senha");
-            c.senhacliente = Console.ReadLine();
-            Console.WriteLine("confirme a sua senha ");
-            c.senha2 = Console.ReadLine();
-            Console.WriteLine("qual a sua idade");
-            c.idade = int.Parse(Console.ReadLine());
-            Console.WriteLine("qual o teu telefone");
-            c.telefone = int.Parse(Console.ReadLine());
-        }
-
+        
         // final primeira parte do menu
 
 
