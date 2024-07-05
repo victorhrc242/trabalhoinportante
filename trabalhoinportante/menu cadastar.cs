@@ -13,7 +13,7 @@ namespace TrabalhoFinal
 {
     public class cadastrar
     {
-        cadastrarcliente C = new cadastrarcliente();        
+        cadastro C = new cadastro();        
         public void escolherAcao()
         {
             Console.WriteLine("-------------CADASTRAR---------------\n" +

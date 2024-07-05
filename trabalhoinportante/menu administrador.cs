@@ -10,7 +10,7 @@ namespace trabalhoinportante
 {
     public class menu_administrador
     {
-        cadastrarcliente c = new cadastrarcliente();
+        cadastro c = new cadastro();
         public void chamaradm()
         {
             Console.WriteLine($"------------menu do adm ola{c.usuarioCliente}-----------------\n" +
@@ -25,11 +25,11 @@ namespace trabalhoinportante
               "\n9-cadastrar vagas disponíveis" +
              "\n10-fechar\r\n");
             int acao = -1;
-            while (acao > 11 || acao < 0)
+            while (acao > 0 || acao < 0)
             {
                 Console.WriteLine("qual ação voce deseja reaizar");
                 acao = int.Parse(Console.ReadLine());
-                if (acao > 2 || acao <= 0)
+                if (acao > 11 || acao <= 0)
                 {
                     Console.WriteLine("digite um numero valido!!\n favor digitar un numero valido");
                 }

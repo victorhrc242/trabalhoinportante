@@ -8,10 +8,12 @@ namespace trabalhoinportante
 {
     public class MenuCliente
     {
+        cadastro c=new cadastro();
         Reservar a = new Reservar();
         public int Menu()
         {
-            Console.WriteLine($"----------- Menu Cliente ---------" +
+            Console.WriteLine($"----------- Menu Cliente ---------\n" +
+                                $"seja ben vido {c.usuarioCliente}"+
         $"\n 1 -Reservar " +
         $"\n 2 -Receber Cupom" +
         $"\n 3 -Frequencia" +
