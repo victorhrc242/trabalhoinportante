@@ -9,6 +9,7 @@ namespace trabalhoinportante
 {
     public class cadastrarcliente
     {
+        
         primeiro_Menu p=new primeiro_Menu();
 
         public string usuarioCliente { get; set; }
@@ -41,14 +42,48 @@ namespace trabalhoinportante
             switch(acao)
             {
                 case 1:
-                   
                     break;
                     case 2:
                     p.chamarprimeiromenu();
                     break;
             }
         }
-       
+        public void cadastraradministrador()
+        {
+            Console.WriteLine("digite un nome");
+            usuarioCliente = Console.ReadLine();
+            Console.WriteLine("qual o seu  e-mail?");
+            email = Console.ReadLine();
+            Console.WriteLine("digite sua senha");
+            senhacliente = Console.ReadLine();
+            Console.WriteLine("confirme sua senha");
+            senha2 = Console.ReadLine();
+            Console.WriteLine("qual o seu cpf");
+            cpf = int.Parse( Console.ReadLine());
+            Console.WriteLine("digite sua idade");
+            idade = int.Parse(Console.ReadLine());
+            Console.WriteLine("digite seu telefone");
+            telefone = int.Parse(Console.ReadLine());
+            Console.WriteLine("qual cidade");
+            cidade = Console.ReadLine();
+            Console.WriteLine("Vc e homen ou mulher?");
+            sexo = Console.ReadLine();
+            Console.WriteLine($"1-confirmar\n" +
+                               "2-Voltar Ao inicio");
+
+            menu_administrador m = new menu_administrador();
+            int acao = int.Parse(Console.ReadLine());
+            switch (acao)
+            {
+                case 1:
+                    m.chamaradm();
+                    break;
+                case 2:
+                    p.chamarprimeiromenu();
+                    break;
+            }
+        }
+
 
 
 

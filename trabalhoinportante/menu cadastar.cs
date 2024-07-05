@@ -28,7 +28,7 @@ namespace TrabalhoFinal
                     C.cadastrarclientes();
                     break;
                 case 2:
-                  
+                  C.cadastraradministrador();
                     break;
             }
 
