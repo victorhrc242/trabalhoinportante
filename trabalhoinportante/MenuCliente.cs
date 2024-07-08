@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrabalhoFinal;
 
 namespace trabalhoinportante
 {
@@ -10,6 +11,7 @@ namespace trabalhoinportante
     {
         cadastro c=new cadastro();
         Reservar a = new Reservar();
+        primeiro_Menu b = new primeiro_Menu();
         public int Menu()
         {
             
@@ -41,6 +43,10 @@ namespace trabalhoinportante
                 case 1:
                     a.MenuReser();
                     break;
+
+                case 6:
+                    b.exibirmenu1();
+                break;
 
             }
             return acao;
