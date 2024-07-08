@@ -6,3 +6,5 @@ using trabalhoinportante;
 
 MenuCliente a = new MenuCliente();
 a.Menu();
+List<ReceberCupom>cupons = new List<ReceberCupom>();
+cupons.add("Cupom de 25%");

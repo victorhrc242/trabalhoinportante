@@ -8,15 +8,12 @@ namespace trabalhoinportante
 {
     public class Reservar
     {
-        public string Nome { get; set; }
         public string Veiculo { get; set; }
         public double DataEntra { get; set; }
         public double DataSaida { get; set; }
 
         public void MenuReser()
         {
-            Console.WriteLine("Qual seu nome ?");
-            Nome = Console.ReadLine();
             Console.WriteLine("Qual seu veiculo?");
             Veiculo = Console.ReadLine();
             Console.WriteLine("Quando vai ser sua data de Entrada?");
