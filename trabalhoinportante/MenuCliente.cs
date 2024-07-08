@@ -12,8 +12,12 @@ namespace trabalhoinportante
         Reservar a = new Reservar();
         public int Menu()
         {
-            Console.WriteLine($"----------- Menu Cliente ---------\n" +
-                                $"seja ben vido {c.usuarioCliente}"+
+            
+            int acao = -1;
+            while (acao > 0 || acao < 0)
+            {
+                Console.WriteLine($"----------- Menu Cliente ---------\n" +
+                                $"seja ben vido {c.usuarioCliente}" +
         $"\n 1 -Reservar " +
         $"\n 2 -Receber Cupom" +
         $"\n 3 -Frequencia" +
@@ -22,12 +26,15 @@ namespace trabalhoinportante
         $"\n 6 -Sair da conta" +
         $"\n 0 -Fechar Programa" +
         $"\n Digite qual ação deseja Realizar" +
+        $"\n qual ação deseja utilizar"+
         $"\n -------------------------------------");
-            int acao = int.Parse(Console.ReadLine());
-            if (acao > 6 || acao < 0)
-            {
-                Console.WriteLine("Error");
+                acao = int.Parse(Console.ReadLine());
+                if (acao > 6 || acao < 0)
+                {
+                    Console.WriteLine("Error");
+                }
             }
+               
          
             switch(acao)
             {
