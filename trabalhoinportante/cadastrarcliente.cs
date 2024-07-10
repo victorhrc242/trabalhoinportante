@@ -20,6 +20,7 @@ namespace trabalhoinportante
         public string cidade { get; set; }
         public double cpf { get; set; }
         public string sexo { get; set; }
+<<<<<<< Updated upstream
       
         public void cadastrarclientes()
         {
@@ -47,7 +48,25 @@ namespace trabalhoinportante
                     p.chamarprimeiromenu();
                     break;
             }
+=======
+        
+
+    public cadastrarcliente(string u,string s,string s2,int i,int t,string ci,double cp,string e,string sx) { 
+        
+            usuarioCliente= u;
+            senhacliente= s;
+            senha2 = s2;
+            idade= i;
+            telefone= t;
+            cidade = ci;
+            email=e;
+            cpf = cp;
+            sexo = sx;
+        
+>>>>>>> Stashed changes
         }
+        
+
        
 
 
