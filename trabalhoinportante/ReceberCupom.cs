@@ -8,8 +8,10 @@ namespace trabalhoinportante
 {
     public class ReceberCupom
     {
+
         public int Id { get; set; }
         public string Nome { get; set; }
+        public bool Cupom { get; set; }
 
         public ReceberCupom(int id, string nome)
         {
@@ -17,6 +19,8 @@ namespace trabalhoinportante
             Nome = nome;
 
         }
+
+
 
         public void ExibirCupom()
         {
