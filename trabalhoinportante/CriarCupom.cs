@@ -9,27 +9,32 @@ namespace trabalhoinportante
 {
     public class CriarCupom
     {
-        public List<CriarCupom> cupons { get; set; }
         
-        public void AdicionarCupom(ReceberCupom cupom)
+        public List<CriarCupom> cupons { get; set; }
+        public bool Cupom { get; set; }
+
+
+        public void AdicionarCupom(CriarCupom cupom)
         {
 
             cupons.Add(cupom);
 
         } 
         
-        public void ExcluirCupom(ReceberCupom cupom)
+        public void ExcluirCupom(CriarCupom Cupom)
         {
-            cupons.Remove(cupom);
+            cupons.Remove(Cupom);
         }
 
         public void ListarCupom()
         {
-            Console.WriteLine("------------------ Listar Cliente ---------------------");
+            
+            Console.WriteLine("------------------ Listar Cupom ---------------------");
             foreach (CriarCupom cupom in cupons)
             {
-                cupom.ExibirCupom();
+                cupom.AdicionarCupom();
             }
         }
+
     }
 }

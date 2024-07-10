@@ -21,5 +21,7 @@ namespace trabalhoinportante
             Console.WriteLine("Quando vai ser sua data de Saida?");
             DataSaida = double.Parse(Console.ReadLine());
         }
+
+
     }
 }

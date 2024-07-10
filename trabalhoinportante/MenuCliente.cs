@@ -18,13 +18,12 @@ namespace trabalhoinportante
         $"\n 2 -Receber Cupom" +
         $"\n 3 -Frequencia" +
         $"\n 4 -Editar Vaga" +
-        $"\n 5 -Suporte" +
-        $"\n 6 -Sair da conta" +
+        $"\n 5 -Sair da conta" +
         $"\n 0 -Fechar Programa" +
         $"\n Digite qual ação deseja Realizar" +
         $"\n -------------------------------------");
             int acao = int.Parse(Console.ReadLine());
-            if (acao > 6 || acao < 0)
+            if (acao > 5 || acao < 0)
             {
                 Console.WriteLine("Error");
             }
@@ -33,6 +32,10 @@ namespace trabalhoinportante
             {
                 case 1:
                     a.MenuReser();
+                    break;
+
+                case 2:
+
                     break;
 
                 case 6:
