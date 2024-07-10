@@ -7,8 +7,9 @@ using TrabalhoFinal;
 
 namespace trabalhoinportante
 {
-    public class cadastrarcliente
+    public class cadastro
     {
+        
         primeiro_Menu p=new primeiro_Menu();
 
         public string usuarioCliente { get; set; }
@@ -24,6 +25,7 @@ namespace trabalhoinportante
       
         public void cadastrarclientes()
         {
+            MenuCliente m=new MenuCliente();
             Console.WriteLine("digite un nome");
             usuarioCliente = Console.ReadLine();
             Console.WriteLine("digite sua idade");
@@ -42,7 +44,7 @@ namespace trabalhoinportante
             switch(acao)
             {
                 case 1:
-                   
+                    m.Menu();
                     break;
                     case 2:
                     p.chamarprimeiromenu();
@@ -65,11 +67,5 @@ namespace trabalhoinportante
         
 >>>>>>> Stashed changes
         }
-        
-
-       
-
-
-
     }
 }

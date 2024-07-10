@@ -13,13 +13,14 @@ namespace TrabalhoFinal
 {
     public class cadastrar
     {
-        cadastrarcliente C = new cadastrarcliente();        
+        cadastro C = new cadastro();        
+        primeiro_Menu p=new primeiro_Menu();
         public void escolherAcao()
         {
-            Console.WriteLine("-------------CADASTRAR---------------\n" +
-                                         "O QUE Voce\n" +
-                                         "1-CLIENTE\n" +
-                                         "2-ADMINISTRADOR");
+            Console.WriteLine("-------------CADASTRAR---------------\n"+
+                                         "1-CLIENTE\n"+
+                                         "2-Sair"
+                                         );
 
             int acao = int.Parse(Console.ReadLine());
             switch (acao)
@@ -28,8 +29,9 @@ namespace TrabalhoFinal
                     C.cadastrarclientes();
                     break;
                 case 2:
-                  
+                    p.chamarprimeiromenu();
                     break;
+               
             }
 
 
