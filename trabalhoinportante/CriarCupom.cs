@@ -14,13 +14,13 @@ namespace trabalhoinportante
         public void AdicionarCupom(ReceberCupom cupom)
         {
 
-            cupons.Add(cupom);
+        
 
         } 
         
         public void ExcluirCupom(ReceberCupom cupom)
         {
-            cupons.Remove(cupom);
+           
         }
 
         public void ListarCupom()
@@ -28,7 +28,7 @@ namespace trabalhoinportante
             Console.WriteLine("------------------ Listar Cliente ---------------------");
             foreach (CriarCupom cupom in cupons)
             {
-                cupom.ExibirCupom();
+               
             }
         }
     }
