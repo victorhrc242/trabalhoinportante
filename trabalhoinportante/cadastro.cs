@@ -9,8 +9,8 @@ namespace trabalhoinportante
 {
     public class cadastro
     {
-        
-        primeiro_Menu p=new primeiro_Menu();
+
+        primeiro_Menu p = new primeiro_Menu();
 
         public string usuarioCliente { get; set; }
         public string senhacliente { get; set; }
@@ -21,51 +21,39 @@ namespace trabalhoinportante
         public string cidade { get; set; }
         public double cpf { get; set; }
         public string sexo { get; set; }
-<<<<<<< Updated upstream
-      
+
+
         public void cadastrarclientes()
         {
-            MenuCliente m=new MenuCliente();
+            MenuCliente m = new MenuCliente();
             Console.WriteLine("digite un nome");
             usuarioCliente = Console.ReadLine();
             Console.WriteLine("digite sua idade");
-            idade= int.Parse(Console.ReadLine());
+            idade = int.Parse(Console.ReadLine());
             Console.WriteLine("digite seu telefone");
-            telefone =int.Parse(Console.ReadLine());
+            telefone = int.Parse(Console.ReadLine());
             Console.WriteLine("qual cidade");
-            cidade=Console.ReadLine();
+            cidade = Console.ReadLine();
             Console.WriteLine("Vc e homen ou mulher?");
-                sexo= Console.ReadLine();
+            sexo = Console.ReadLine();
             Console.WriteLine("qual o seu  e-mail?");
             email = Console.ReadLine();
-            Console.WriteLine($"1-confirmar\n"+
+            Console.WriteLine($"1-confirmar\n" +
                                "2-Voltar Ao inicio");
-            int acao=int.Parse(Console.ReadLine());
-            switch(acao)
+            int acao = int.Parse(Console.ReadLine());
+            switch (acao)
             {
                 case 1:
                     m.Menu();
                     break;
-                    case 2:
+                case 2:
                     p.chamarprimeiromenu();
                     break;
             }
-=======
-        
 
-    public cadastrarcliente(string u,string s,string s2,int i,int t,string ci,double cp,string e,string sx) { 
-        
-            usuarioCliente= u;
-            senhacliente= s;
-            senha2 = s2;
-            idade= i;
-            telefone= t;
-            cidade = ci;
-            email=e;
-            cpf = cp;
-            sexo = sx;
-        
->>>>>>> Stashed changes
+
+
+         
         }
     }
 }

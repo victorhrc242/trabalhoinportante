@@ -10,47 +10,65 @@ namespace trabalhoinportante
     public class MenuCliente
     {
         cadastro c=new cadastro();
-        Reservar a = new Reservar();
         primeiro_Menu b = new primeiro_Menu();
         public int Menu()
         {
             
             int acao = -1;
-            while (acao > 0 || acao < 0)
+            while (acao > 8 || acao < 0)
             {
                 Console.WriteLine($"----------- Menu Cliente ---------\n" +
-                                $"seja ben vido {c.usuarioCliente}" +
-        $"\n 1 -Reservar " +
-        $"\n 2 -Receber Cupom" +
-        $"\n 3 -Frequencia" +
-        $"\n 4 -Editar Vaga" +
-        $"\n 5 -Suporte" +
-        $"\n 6 -Sair da conta" +
-        $"\n 0 -Fechar Programa" +
-        $"\n Digite qual ação deseja Realizar" +
-        $"\n qual ação deseja utilizar"+
-        $"\n -------------------------------------");
+                                             $"seja bem vido " +
+                                            $"\n 1 -Reservar " +
+                                            $"\n 2 -Receber Cupom" +
+                                            $"\n 3 -Frequencia" +
+                                            $"\n 4 -Editar Vaga" +
+                                            $"\n 5 -Suporte" +
+                                            $"\n 6 -Sair da conta" +
+                                            $"\n 0 -Fechar Programa" +
+                                            $"\n Digite qual ação deseja Realizar" +
+                                            $"\n qual ação deseja utilizar" +
+                                  $"\n -------------------------------------");
+                Console.WriteLine("qual ação voce deseja reaizar");
                 acao = int.Parse(Console.ReadLine());
-                if (acao > 6 || acao < 0)
+                if (acao > 8 || acao <= 0)
                 {
-                    Console.WriteLine("Error");
+                    Console.WriteLine("digite um numero valido!!\n favor digitar un numero valido");
+
                 }
+
             }
-               
-         
-            switch(acao)
+            switch (acao)
             {
                 case 1:
-                    a.MenuReser();
+                    Reservar r=new Reservar();
+                    r.MenuReser();
                     break;
+                case 2:
 
-                case 6:
-                    b.exibirmenu1();
-                break;
+                    break;
+                case 3:
 
+                    break;
+                    case 4:
+
+                    break;
+                    case 5:
+
+                    break;
+                    case 6:
+
+                    break;
+            
             }
-            return acao;
+
+           return acao;
+         
+        }
+               
+         
+        
         }
         
     }
-}
+
