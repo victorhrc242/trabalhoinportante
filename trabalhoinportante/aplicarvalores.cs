@@ -11,8 +11,7 @@ namespace trabalhoinportante
     {
 
         public List<editarecancelarreserva> cadastro { get; set; }
-        public List<cadastro> c { get; set; }
-        cadastro cc = new cadastro();
+  
         public aplicarvalores()
         {
             cadastro = new List<editarecancelarreserva>();

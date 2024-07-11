@@ -44,12 +44,8 @@ namespace trabalhoinportante
           
 
         }
-        public int id { get; set; }
-        public void listarvagas()
-        {
-            Console.WriteLine("-A-B-C-D-E-F-G-H"+
-                              "");
-        }
+       
+     
     }
 }
 
