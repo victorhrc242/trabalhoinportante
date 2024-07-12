@@ -11,17 +11,8 @@ namespace trabalhoinportante
     {
         public List<CriarCupom> cupons { get; set; }
         
-        public void AdicionarCupom(ReceberCupom cupom)
-        {
-
+     
         
-
-        } 
-        
-        public void ExcluirCupom(ReceberCupom cupom)
-        {
-           
-        }
 
         public void ListarCupom()
         {

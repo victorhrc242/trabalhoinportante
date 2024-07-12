@@ -1,5 +1,7 @@
 ﻿
+using System.ComponentModel.Design;
 using trabalhoinportante;
+using viv;
 
-MenuCliente m=new MenuCliente();
-m.Menu();
+sistemas s=new sistemas();
+s.iniciarsistema();
