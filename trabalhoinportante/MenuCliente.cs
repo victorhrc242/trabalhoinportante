@@ -9,12 +9,12 @@ namespace trabalhoinportante
 {
     public class MenuCliente
     {
-        cadastro c=new cadastro();
+        cadastro c = new cadastro();
         Reservar a = new Reservar();
         primeiro_Menu b = new primeiro_Menu();
         public int Menu()
         {
-            
+            return 0;
             int acao = -1;
             while (acao > 0 || acao < 0)
             {
@@ -27,31 +27,32 @@ namespace trabalhoinportante
         $"\n 5 -Sair da conta" +
         $"\n 0 -Fechar Programa" +
         $"\n Digite qual ação deseja Realizar" +
-        $"\n qual ação deseja utilizar"+
+        $"\n qual ação deseja utilizar" +
         $"\n -------------------------------------");
-            int acao = int.Parse(Console.ReadLine());
-            if (acao > 5 || acao < 0)
-            {
-                Console.WriteLine("Error");
+                acao = int.Parse(Console.ReadLine());
+                if (acao > 5 || acao < 0)
+                {
+                    Console.WriteLine("Error");
+                }
+
+                switch (acao)
+                {
+                    case 1:
+                        a.MenuReser();
+                        break;
+
+                    case 2:
+
+                        break;
+
+                    case 6:
+                        b.exibirmenu1();
+                        break;
+
+                }
+                return acao;
             }
-         
-            switch(acao)
-            {
-                case 1:
-                    a.MenuReser();
-                    break;
-
-                case 2:
-
-                    break;
-
-                case 6:
-                    b.exibirmenu1();
-                break;
-
-            }
-            return acao;
+            
         }
-        
     }
 }

@@ -32,7 +32,7 @@ namespace trabalhoinportante
             Console.WriteLine("------------------ Listar Cupom ---------------------");
             foreach (CriarCupom cupom in cupons)
             {
-                cupom.AdicionarCupom();
+
             }
         }
 
