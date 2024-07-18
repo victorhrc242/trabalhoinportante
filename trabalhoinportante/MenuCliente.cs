@@ -14,7 +14,6 @@ namespace trabalhoinportante
         primeiro_Menu b = new primeiro_Menu();
         public int Menu()
         {
-            return 0;
             int acao = -1;
             while (acao > 0 || acao < 0)
             {
@@ -52,7 +51,7 @@ namespace trabalhoinportante
                 }
                 return acao;
             }
-            
+            return acao;
         }
     }
 }

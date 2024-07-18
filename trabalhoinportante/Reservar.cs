@@ -8,13 +8,13 @@ namespace trabalhoinportante
 {
     public class Reservar
     {
-        DateTime tempodereserva { get; set; } 
+        DateTime tempodereserva = DateTime.Now;
         List<Reservar> Vagas = new List<Reservar>();
         public string Veiculo { get; set; }
         public string Nome { get; set; }
         public double Valor = 10.00;
         public string Vaga { get; set; }
-
+        ReceberCupom l {get; set;}
 
 
         public int MenuReser()
@@ -53,21 +53,16 @@ namespace trabalhoinportante
             Console.WriteLine("Qual vaga você vai ocupar?");
             Vaga = (Console.ReadLine());
             Console.WriteLine($"Voçê vai resevar por quanto tempo?");
-
-
+            tempodereserva=DateTime.Parse(Console.ReadLine());
             Console.WriteLine($"Vai usar cupom?" +
-                $"(Escreva sim ou nao)");
+                $"\n(Escreva sim ou nao)");
             string acao = (Console.ReadLine());
             if (acao == "sim")
             {
-                
-
+                l.ExibirCupom();
             }
-
             Console.WriteLine($"O valor do estacionamento: {Valor}");
         }
-
-
     }
 }
 
