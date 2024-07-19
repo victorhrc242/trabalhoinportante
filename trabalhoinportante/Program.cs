@@ -2,4 +2,4 @@
 using trabalhoinportante;
 
 Reservar p=new Reservar();
-p.reservar();
+p.Vagasdisponiveis();

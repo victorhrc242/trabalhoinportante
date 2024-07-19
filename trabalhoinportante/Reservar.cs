@@ -9,7 +9,7 @@ namespace trabalhoinportante
     public class Reservar
     {
         DateTime tempodereserva = DateTime.Now;
-        List<Reservar> Vagas = new List<Reservar>();
+        List<Reservar> Vagas { get; set; }
         public string Veiculo { get; set; }
         public string Nome { get; set; }
         public double Valor = 10.00;
@@ -33,7 +33,7 @@ namespace trabalhoinportante
             switch (acao)
             {
                 case 1:
-
+                    
                     break;
 
                 case 2:
@@ -51,11 +51,9 @@ namespace trabalhoinportante
             Console.WriteLine("Qual seu nome?");
             Nome = (Console.ReadLine());
             Console.WriteLine("Qual vaga você vai ocupar?");
-            Vaga = (Console.ReadLine());
-            Console.WriteLine($"Voçê vai resevar por quanto tempo?");
-            tempodereserva=DateTime.Parse(Console.ReadLine());
+            Vaga = (Console.ReadLine());   
             Console.WriteLine($"Vai usar cupom?" +
-                $"\n(Escreva sim ou nao)");
+                $"\n(Digite sim ou nao)");
             string acao = (Console.ReadLine());
             if (acao == "sim")
             {
@@ -63,6 +61,7 @@ namespace trabalhoinportante
             }
             Console.WriteLine($"O valor do estacionamento: {Valor}");
         }
+ 
     }
 }
 
