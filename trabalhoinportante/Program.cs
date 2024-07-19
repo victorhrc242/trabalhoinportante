@@ -1,5 +1,7 @@
-﻿using TrabalhoFinal;
+﻿
+using System.ComponentModel.Design;
 using trabalhoinportante;
+using viv;
 
-primeiro_Menu p=new primeiro_Menu();
-p.chamarprimeiromenu();
+sistemas s=new sistemas();
+s.iniciarsistema();

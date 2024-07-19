@@ -3,55 +3,72 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TrabalhoFinal;
+using trabalhoinportante;
 
-namespace trabalhoinportante
+namespace viv
 {
-    public class MenuCliente
+    public class sistemas
     {
-        cadastro c=new cadastro();
-        Reservar a = new Reservar();
-        primeiro_Menu b = new primeiro_Menu();
-        public int Menu()
+        public void iniciarsistema()
         {
-            
-            int acao = -1;
-            while (acao > 0 || acao < 0)
+            int acaoselecionada = -1;
+
+            while (acaoselecionada != 0)
             {
-                Console.WriteLine($"----------- Menu Cliente ---------\n" +
-                                $"seja ben vido {c.usuarioCliente}" +
-        $"\n 1 -Reservar " +
-        $"\n 2 -Receber Cupom" +
-        $"\n 3 -Frequencia" +
-        $"\n 4 -Editar Vaga" +
-        $"\n 5 -Sair da conta" +
-        $"\n 0 -Fechar Programa" +
-        $"\n Digite qual ação deseja Realizar" +
-        $"\n qual ação deseja utilizar"+
-        $"\n -------------------------------------");
-            int acao = int.Parse(Console.ReadLine());
-            if (acao > 5 || acao < 0)
-            {
-                Console.WriteLine("Error");
+                exibirmenu();
+                acaoselecionada = solicitaracaousuario();
+                RealizarAcaorealizada(acaoselecionada);
             }
-         
-            switch(acao)
+        }
+        private int solicitaracaousuario()
+        {
+            int acao = -1;
+            while (acao > 6 || acao < 0)
             {
-                case 1:
-                    a.MenuReser();
-                    break;
-
-                case 2:
-
-                    break;
-
-                case 6:
-                    b.exibirmenu1();
-                break;
-
+                Console.WriteLine("qual ação voce deseja realizar");
+                acao = int.Parse(Console.ReadLine());
+                if (acao > 6 || acao <= 0)
+                {
+                    Console.WriteLine("digite um numero valido!!\n favor digitar un numero valido");
+                }
             }
             return acao;
         }
-        
+        private void exibirmenu()
+        {
+            Console.WriteLine($"----------- Menu Cliente ---------\n" +
+                                             $"seja bem vido " +
+                                            $"\n 1 -Reservar " +
+                                            $"\n 2 -Receber Cupom" +
+                                            $"\n 4 -Editar Vaga" +
+                                            $"\n 0 -Fechar Programa" +
+                                            $"\n qual ação deseja utilizar" +
+                                  $"\n -------------------------------------");
+        }
+        private void RealizarAcaorealizada(int acaoselecionada)
+        {
+            switch (acaoselecionada)
+            {
+                case 1:
+                  
+                    break;
+                case 2:
+                   recebercupom r=new recebercupom();
+                    r.iniciarmenu();
+                    break;
+                case 3:
+       
+                    break;
+                case 4:
+                  
+                    break;
+               
+            }
+        }
+
+    
     }
 }
+
+
+

@@ -11,8 +11,7 @@ namespace trabalhoinportante
     {
 
         public List<editarecancelarreserva> cadastro { get; set; }
-        public List<cadastro> c { get; set; }
-        cadastro cc=new cadastro();
+  
         public aplicarvalores()
         {
             cadastro = new List<editarecancelarreserva>();
@@ -21,12 +20,12 @@ namespace trabalhoinportante
         }
         private void inicializarDados()
         {
-            c.Add(cc.usuarioCliente);
 
-          
-            
 
-          
+
+
+
+
 
 
 
@@ -50,18 +49,7 @@ namespace trabalhoinportante
 
         public void editafuncionario(int profissaoselecionada, int idfuncionario, int campo, string resposta)
         {
-            if (profissaoselecionada == 1)
-            {
-                gerente ger = colaboradores.buscargerenteporid(idfuncionario);
-                if (campo == 1)
-                {
-                    ger.nome = resposta;
-
-                }
-                else if (campo == 2)
-                {
-                    ger.idade = int.Parse(resposta);
-                }
-            }
         }
+    }
+}
 
