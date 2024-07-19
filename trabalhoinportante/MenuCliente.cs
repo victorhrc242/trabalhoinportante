@@ -40,7 +40,6 @@ namespace viv
                                              $"seja bem vido " +
                                             $"\n 1 -Reservar " +
                                             $"\n 2 -Receber Cupom" +
-                                            $"\n 3 -Frequencia" +
                                             $"\n 4 -Editar Vaga" +
                                             $"\n 0 -Fechar Programa" +
                                             $"\n qual ação deseja utilizar" +
@@ -58,30 +57,16 @@ namespace viv
                     r.iniciarmenu();
                     break;
                 case 3:
-                    frequencia();
+       
                     break;
                 case 4:
                   
                     break;
-                case 5:
-                    
-                    break;
-                case 6:
-                
-                    break;
+               
             }
         }
 
-        private void frequencia()
-        {
-
-            Console.WriteLine($"frequencia"+
-                              $"qual o seu id?"
-                              );
-                            int id=int.Parse( Console.ReadLine());
-            Console.WriteLine($"");
-
-        }
+    
     }
 }
 
