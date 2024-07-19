@@ -13,6 +13,7 @@ namespace trabalhoinportante
         private double valorestacionamento;
         public double cuponcar { get; set; }
         public double cuponmoto { get; set; }
+        
         public recebercupom()
         {
             cuponcar = new Random().Next(10,50);

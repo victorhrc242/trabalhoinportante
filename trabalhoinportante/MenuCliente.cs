@@ -50,7 +50,8 @@ namespace viv
             switch (acaoselecionada)
             {
                 case 1:
-                  
+                  Reservar re=new Reservar();
+                    re.MenuReser();
                     break;
                 case 2:
                    recebercupom r=new recebercupom();

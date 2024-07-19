@@ -9,41 +9,43 @@ namespace trabalhoinportante
 {
     public class Reservar
     {
-        public string Veiculo { get; set; }
-        public double DataEntra { get; set; }
-        public double DataSaida { get; set; }
-
+        public string acao { get; set; }
         public void MenuReser()
         {
-            int acao = -1;
-            while (acao > 2 || acao < 0)
+
+            Console.WriteLine("qual o seu veiculo,carro ou moto?");
+            if (acao=="carro")
             {
-                Console.WriteLine($"----------- Reservar ---------\n" +
-                                        $"\n 1 -Listar vagas disponiveis " +
-                                        $"\n 2 - reservar vagas" +
-                                  $"\n -------------------------------------");
-                Console.WriteLine("qual ação voce deseja reaizar");
-                acao = int.Parse(Console.ReadLine());
-                if (acao > 2 || acao <= 0)
+                string veiculo = Console.ReadLine();
+                Console.WriteLine("qual a sua placa");
+                string placa = Console.ReadLine();
+                Console.WriteLine("");
+            }
+            else if (acao=="moto")
+            {
+                string veiculo = Console.ReadLine();
+                Console.WriteLine("qual a sua placa");
+                string placa = Console.ReadLine();
+                Console.WriteLine("qual o seu cpf");
+                double cpf =double.Parse( Console.ReadLine());
+                Console.WriteLine("vc quer usar o seu cupon?s/n");
+                
+                if (acao=="s")
                 {
-                    Console.WriteLine("digite um numero valido!!\n favor digitar un numero valido");
+               
+                }
+                else if (acao == "n")
+                {
 
                 }
 
-            }
-            switch (acao)
-            {
-                case 1:
-                       
-                    break;
-                case 2:
-
-                    break;
+                
             }
 
-          
+           
 
-        }
+
+    }
 
 
     }
